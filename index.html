@@ -125,7 +125,7 @@ header.nav.scrolled .nav-logo img{height:38px}
   animation:floaty 11s ease-in-out infinite;
 }
 @keyframes floaty{0%,100%{transform:translate(-50%,-54%)}50%{transform:translate(-50%,-50%)}}
-.hero .wrap{position:relative;z-index:2;text-align:center;padding-top:90px}
+.hero .wrap{position:relative;z-index:2;text-align:center;padding-top:48px}
 .hero .eyebrow{opacity:0;animation:rise .9s var(--ease) .2s forwards}
 .hero h1{
   font-size:clamp(3.2rem,9vw,7.4rem);line-height:.98;color:var(--ink);
@@ -142,6 +142,7 @@ header.nav.scrolled .nav-logo img{height:38px}
 .hero h1 .l2{animation-delay:.5s}
 .hero .lead{animation-delay:.7s}
 .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation-delay:.9s}
+.hero-cta .btn{min-width:228px;justify-content:center}
 .scroll-hint{
   position:absolute;left:0;right:0;bottom:calc(26px + env(safe-area-inset-bottom));z-index:3;
   font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--clay-deep);
@@ -270,7 +271,7 @@ header.nav.scrolled .nav-logo img{height:38px}
 
 /* ---------- FOOTER ---------- */
 footer{background:linear-gradient(160deg,var(--clay) 0%,var(--clay-deep) 100%);color:var(--cream);padding:84px 0 34px;position:relative;overflow:hidden}
-footer::before{content:"";position:absolute;left:50%;top:-30%;transform:translateX(-50%);width:520px;height:520px;background:var(--markWhite) center/contain no-repeat;opacity:.06}
+footer::before{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:320px;height:320px;background:var(--markWhite) center/contain no-repeat;opacity:.07}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;position:relative;z-index:1}
 .foot-logo img{height:84px;margin-bottom:22px}
 .foot-brand p{color:rgba(247,240,230,.82);max-width:300px;font-size:.96rem}
